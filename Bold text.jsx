@@ -120,12 +120,12 @@ function textWithBold(comp, text, boldFont, textOptions, x, y, w, delimiter) {
             removeWord();
             newText(word.replace(regex, ""), x, y)
             applyOptions()
-            newX = textLayer.position.value[0] + textLayer.sourceRectAtTime(0, false).left + textLayer.sourceRectAtTime(0, false).width;
             if (isBold) {
                 applyOptions(boldFont);
             } else {
                 applyOptions();
             }
+            newX = textLayer.position.value[0] + textLayer.sourceRectAtTime(0, false).left + textLayer.sourceRectAtTime(0, false).width;
         }
 
 
