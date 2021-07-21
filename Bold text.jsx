@@ -128,7 +128,7 @@ function textWithBold(comp, text, boldFont, textOptions, x, y, w, delimiter) {
             newX = textLayer.position.value[0] + textLayer.sourceRectAtTime(0, false).left + textLayer.sourceRectAtTime(0, false).width;
         }
 
-
+        
     }
     function newText(word, x, y) {
         textLayer = comp.layers.addText(word)
