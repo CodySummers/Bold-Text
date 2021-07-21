@@ -21,7 +21,6 @@ var bold = "Arial-BoldMT"
 textWithBold(myComp, text, bold, textOptions);
 
 
-
 /**
  * Text with bold words
  * -------------------
@@ -100,7 +99,6 @@ function textWithBold(comp, text, boldFont, textOptions, x, y, w, delimiter) {
             } else {
                 appendText(word.replace(regex, ""));
             }
-
             if (word.lastIndexOf(delimiter) > 0) {
                 isBold = -1;
             }
@@ -127,7 +125,6 @@ function textWithBold(comp, text, boldFont, textOptions, x, y, w, delimiter) {
             }
             newX = textLayer.position.value[0] + textLayer.sourceRectAtTime(0, false).left + textLayer.sourceRectAtTime(0, false).width;
         }
-
         
     }
     function newText(word, x, y) {
